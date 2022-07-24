@@ -11,7 +11,7 @@ function Banner(){
     const[isDeleting,setIsDeleting]=useState(false);
     const[text,setText]=useState('');
     const [delta,setDelta]=useState(300-Math.random()*100);
-    const toRotate=["Front-End Web developer","Web Desginer","Competitive Programmer"];
+    const toRotate=["Front-End Web developer","Web Designer","Competitive Programmer"];
     const period=2000;
 
     function btnClick() {
@@ -53,10 +53,10 @@ function Banner(){
                     {({isVisible})=>
                     <div className={isVisible ? "animate__animated animate__fadeInTopLeft": ""}>
                     <span className="tagline"> Welcome to my World</span>
-                    <h1>{'Hi Im a Chiru Vishal '}<br></br><span className="wrap">{text}</span></h1>
-                    <p>Bonjour!! I am .
-                         Currently, I am pursuing B.TECH from National Institute of Technology,Raipur in Computer Science and Engineering.
-                          My hobbies are playng Table tennis, listening to music and playing video games.
+                    <h1>{'Hi! I am Chiru Vishal '}<br></br><span className="wrap">{text}</span></h1>
+                    <p>Bonjour!! I am 
+                         Currently pursuing B.TECH from the National Institute of Technology,Raipur in Computer Science and Engineering.
+                          My hobbies are playing Table tennis, listening to music and playing video games.
                          I also do competitive programming in various platforms like CodeChef: chiruvishal14 and Leetcode:chiruvishalmolleti</p>
                     <button onClick={btnClick}>View Resume<ArrowRightCircle size={25}></ArrowRightCircle></button>
                     </div>}
